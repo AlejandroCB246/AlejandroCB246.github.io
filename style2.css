@@ -1,0 +1,35 @@
+#equis_roja{
+    background-color: white;
+    color: brown;
+    font-weight: 800;
+    animation-name: wait;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#circulo_rojo{
+    background-color: white;
+    font-weight: 400;
+    animation-name: wait_rojo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wait {
+    50%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+@keyframes wait_rojo {
+    50%{
+        background-color: crimson;
+        color: white;
+    }
+    100%{
+        background-color: white;
+    }
+}
