@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+
+#hover_yt{
+color: white;
+}
+
+#hover_yt:hover{
+color: crimson;
+}
+
+#hover_ig{
+color: white;
+}
+
+#hover_ig:hover{
+    color: plum;
+    }
+
+#hover_fb{
+color: white;
+}
+
+#hover_fb:hover{
+    color: dodgerblue;
+    }
+
+body{
+    background-color:#1B263B;
+}
+
+p{
+    color: #E0E1DD;
+}
+
+h1{
+    color: #E0E1DD;
+}
+
+h2{
+    color: #E0E1DD;
+}
+
+h3{
+    color: #E0E1DD;
+}
+
+h4{
+    color: #E0E1DD;
+}
+
+h5{
+    color: #E0E1DD;
+}
+
+
+footer{
+    background-color: #212529;
+    color: white;
+}
+
+#fuente_logo{
+    font-family: 'Yatra One', cursive;
+}
+

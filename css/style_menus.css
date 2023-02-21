@@ -1,0 +1,48 @@
+#menu_infantil{
+    transition-duration: 400ms;
+}
+
+#menu_infantil.activo{
+transform: scale(110%);
+margin-top: 2%;
+margin-bottom: 2%;
+margin-right: 2%;
+border: 1%;
+border-style: dashed;
+border-color: crimson;
+padding-top: 1%;
+padding-bottom: 1%;
+transition-duration: 200ms;
+}
+
+#menu_adultos{
+    transition-duration: 400ms;
+}
+
+#menu_adultos.activo{
+transform: scale(110%);
+margin: 2%;
+border: 1%;
+border-style: dashed;
+border-color: crimson;
+padding-top: 1%;
+padding-bottom: 1%;
+transition-duration: 200ms; 
+}
+
+#menu_grupos{
+    transition-duration: 400ms;
+}
+
+#menu_grupos.activo{
+transform: scale(110%);
+margin-top: 2%;
+margin-bottom: 2%;
+margin-left: 2%;
+border: 1%;
+border-style: dashed;
+border-color: crimson;
+padding-top: 1%;
+padding-bottom: 1%;
+transition-duration: 200ms;
+}
