@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Restaurante, comida, japon, japones, estación de carga, comida japonesa, sushi, katsudon, grupos grandes, menu variado, reservas, bebidas, bebida japonesa, sakura sushi, restaurante sakura."
+    />
+    <meta
+      name="description"
+      content="Página que contiene los menus A la Carta del restaurante, están definidos y se pueden combinar con la variedad que ofrece el lugar."
+    />
+    <meta name="Author" content="Alejandro Callejas" />
+    <title>A la carta | Sakura Sushi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style_general.css" />
+    <link rel="stylesheet" href="css/style_menus.css" />
+    <link rel="stylesheet" href="css/style_a_la_carta.css" />
+    <link rel="shortcut icon" href="imgs/ramen_logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="sticky-top bg-dark">
+      <div class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a href="index.html">
+              <img
+                src="imgs/ramen_logo.png"
+                alt="Logo"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"
+                    ><i class="bi bi-house-door-fill me-2"></i>Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina_reservas.html"
+                    ><i class="bi bi-hand-index-fill me-2"></i>Reservar</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="pagina_menu.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><i class="bi bi-list text-dark"></i>
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="pagina_menu.html"
+                        >Menú para adultos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pagina_menu.html"
+                        >Menú para niños</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pagina_menu.html"
+                        >Menú para grupos</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina_contacto.html"
+                    ><i class="bi bi-telephone-forward-fill me-2"></i
+                    >Contactar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="pagina_a_la_carta.html"
+                    aria-current="page"
+                    ><i class="bi bi-check-square-fill me-2"></i>A la carta</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mt-3">
+      <div class="container">
+        <h1 class="text-center mb-3 text-decoration-underline">
+          Menus preparados para cada ocasión
+        </h1>
+
+        <!-- Platos entrada -->
+
+        <div class="my-3">
+          <div class="row">
+            <div class="col-5 fondos_opciones rounded-start">
+              <div class="mt-2">
+                <h4>Elige un plato de entrada y bebida</h4>
+
+                <form action="">
+                  <div class="mb-3">
+                    <label for="platillos_entrada">
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_entrada"
+                          id="plato1_entrada"
+                          value="plato1"
+                          required
+                          class="me-2"
+                        />Sopa miso
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_entrada"
+                          id="plato2_entrada"
+                          value="plato2"
+                          required
+                          class="me-2"
+                        />Nigiri
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_entrada"
+                          id="plato3_entrada"
+                          value="plato3"
+                          required
+                          class="me-2"
+                        />Gyoza
+                      </div>
+                    </label>
+                  </div>
+                </form>
+
+                <form action="">
+                  <div class="mb-2">
+                    <label for="bebidas_entrada">
+                      <div class="mb-3">
+                        <select
+                          name="bebidas_entrada"
+                          id="bebidas_entrada"
+                          required
+                        >
+                          <option value="bebida1" id="bebida1_entrada">
+                            Agua
+                          </option>
+                          <option value="bebida2" id="bebida2_entrada">
+                            Té de limón
+                          </option>
+                          <option value="bebida3" id="bebida3_entrada">
+                            Café
+                          </option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-7 rounded-end fondo_imagenes p-3">
+              <div id="imagen_plato_entrada"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platos fuertes -->
+
+        <div class="my-3">
+          <div class="row">
+            <div class="col-5 fondos_opciones rounded-start">
+              <div class="mt-2">
+                <h4>Elige un plato fuerte y bebida</h4>
+
+                <form action="">
+                  <div class="mb-3">
+                    <label for="platillos_fuertes">
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_fuertes"
+                          id="plato1_fuertes"
+                          value="plato1"
+                          required
+                          class="me-2"
+                        />Sashimi
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_fuertes"
+                          id="plato2_fuertes"
+                          value="plato2"
+                          required
+                          class="me-2"
+                        />Yakisoba
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_fuertes"
+                          id="plato3_fuertes"
+                          value="plato3"
+                          required
+                          class="me-2"
+                        />Katsudon
+                      </div>
+                    </label>
+                  </div>
+                </form>
+
+                <form action="">
+                  <div class="mb-2">
+                    <label for="bebidas_fuertes">
+                      <div class="mb-3">
+                        <select
+                          name="bebidas_fuertes"
+                          id="bebidas_fuertes"
+                          required
+                        >
+                          <option value="bebida1" id="bebida1_fuerte">
+                            Limonada
+                          </option>
+                          <option value="bebida2" id="bebida2_fuerte">
+                            Coca Cola (gaseosa)
+                          </option>
+                          <option value="bebida3" id="bebida3_fuerte">
+                            Asahi (Bebida Alcoholica)
+                          </option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-7 rounded-end fondo_imagenes p-3">
+              <div id="imagen_plato_fuertes"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postres -->
+
+        <div class="my-3">
+          <div class="row">
+            <div class="col-5 fondos_opciones rounded-start">
+              <div class="mt-2">
+                <h4>Elige un postre y bebida</h4>
+
+                <form action="">
+                  <div class="mb-3">
+                    <label for="platillos_postre">
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_postre"
+                          id="plato1_postre"
+                          value="plato1"
+                          required
+                          class="me-2"
+                        />Mochi
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_postre"
+                          id="plato2_postre"
+                          value="plato2"
+                          required
+                          class="me-2"
+                        />Tartar de zanahoria
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="radio"
+                          name="platillos_postre"
+                          id="plato3_postre"
+                          value="plato3"
+                          required
+                          class="me-2"
+                        />Souffle Pancake
+                      </div>
+                    </label>
+                  </div>
+                </form>
+
+                <form action="">
+                  <div class="mb-2">
+                    <label for="bebidas_postre">
+                      <div class="mb-3">
+                        <select
+                          name="bebidas_postre"
+                          id="bebidas_postre"
+                          required
+                        >
+                          <option value="bebida1" id="bebida1_postre">
+                            Piña
+                          </option>
+                          <option value="bebida2" id="bebida2_postre">
+                            Sandía
+                          </option>
+                          <option value="bebida3" id="bebida3_postre">
+                            Fanta (gaseosa)
+                          </option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-7 rounded-end fondo_imagenes p-3">
+              <div id="imagen_plato_postre"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center my-4">
+          <button class="rounded fs-4" id="boton_continuar">Continuar</button>
+        </div>
+
+        <div hidden id="contenedor_escondido" class="my-3">
+          <h4 class="text-center">Total a pagar</h4>
+
+          <div class="d-flex justify-content-center">
+            <div class="row text-center bg-light w-50 py-3 rounded-top">
+              <p class="text-dark">
+                Plato entrada y bebida: <span id="info_plato_entrada"></span>
+                <span id="info_bebida_entrada"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="row text-center bg-light w-50 py-3">
+              <p class="text-dark">
+                Plato fuerte y bebida: <span id="info_plato_fuerte"></span>
+                <span id="info_bebida_fuerte"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="row text-center bg-light w-50 py-3 rounded-bottom">
+              <p class="text-dark">
+                Plato de postre y bebida: <span id="info_plato_postre"></span>
+                <span id="info_bebida_postre"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="my-3">
+            <h4 class="text-center">
+              <span
+                class="border border-1 border-danger rounded px-2 text-success"
+                id="total_pagar"
+              ></span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="sticky-top mt-3">
+      <div class="row container-fluid align-items-center py-3">
+        <div class="col text-start ms-5">
+          <a href="#"><p class="m-0">Politicas de privacidad</p></a>
+        </div>
+        <div class="col text-center">
+          <p class="m-0">
+            Creada por Alejandro Callejas | Proyecto de clase INA
+          </p>
+        </div>
+        <div class="col text-end me-5 fs-5">
+          <a href="#" class="mx-2" id="hover_fb"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#" class="mx-2" id="hover_ig"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" class="mx-2" id="hover_yt"
+            ><i class="bi bi-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/menuapp.js"></script>
+    <script src="js/a_la_carta_app.js"></script>
+  </body>
+</html>
